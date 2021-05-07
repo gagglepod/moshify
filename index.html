@@ -14,19 +14,18 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div>
-      <button class="btn btn--primary">Buy Now</button>
-      <button class="btn btn--secondary">Buy Now</button>
-      <button class="btn btn--accent">Buy Now</button>
-      <a href="#" class="btn btn--accent">Buy Now</a>
-    </div>
-    <div>
-      <button class="btn btn--primary btn--outline">Buy Now</button>
-      <button class="btn btn--secondary btn--outline">Buy Now</button>
-    </div>
-    <div>
-      <button class="btn btn--primary btn--block">Buy Now</button>
-      <button class="btn btn--secondary btn--block">Buy Now</button>
+    <div class="input-group">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#wordpress"></use>
+        </svg>
+      </span>
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter domain name here..."
+      />
+      <button class="btn btn--accent">Search</button>
     </div>
   </body>
 </html>
