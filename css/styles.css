@@ -590,15 +590,17 @@ a {
   text-align: center;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
   }
-
   .callout__content {
     text-align: left;
   }
-
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
@@ -859,6 +861,7 @@ a {
 /* Footer */
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer__section {

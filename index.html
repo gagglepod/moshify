@@ -12,8 +12,10 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- Begin Section: Header -->
     <header>
       <nav class="nav collapsible">
         <a class="nav__brand" href="/"
@@ -30,10 +32,14 @@
         </ul>
       </nav>
     </header>
+    <!-- End Section: Header -->
+    <!-- Begin Section: Hero -->
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 class="block__heading" data-aos="fade-right">
+            Cloud Hosting for Pros
+          </h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
@@ -48,12 +54,19 @@
             type="image/png"
             srcset="images/banner.png 1x, images/banner@2x.png 2x"
           />
-          <img class="hero__image" src="images/banner.png" alt="" />
+          <img
+            class="hero__image"
+            src="images/banner.png"
+            alt=""
+            data-aos="zoom-in-left"
+          />
         </picture>
       </div>
     </section>
+    <!-- End Section: Hero -->
+    <!-- Begin Section: Domain -->
     <section class="block container block-domain">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>Starting at $9 per month</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
@@ -82,8 +95,10 @@
         <li>.xyz $10</li>
       </ul>
     </section>
+    <!-- End Section: Domain -->
+    <!-- Begin Section: Plans -->
     <section class="block container block-plans">
-      <div class="grid grid--1x3">
+      <div class="grid grid--1x3" data-aos="fade-up">
         <div class="plan">
           <div class="card card--secondary">
             <header class="card__header">
@@ -146,6 +161,8 @@
         </div>
       </div>
     </section>
+    <!-- End Section: Plans -->
+    <!-- Begin Section: Feature -->
     <section class="block container">
       <header class="block__header">
         <h2>Host on the Cloud to Keep Growing</h2>
@@ -154,8 +171,9 @@
           tenetur!
         </p>
       </header>
+      <!-- Feature #1 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -169,7 +187,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -181,8 +199,9 @@
           <img class="feature__image" src="images/easy@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature #2 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -196,7 +215,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -208,8 +227,9 @@
           <img class="feature__image" src="images/fast@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature #3 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#settings"></use>
@@ -223,7 +243,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -235,8 +255,9 @@
           <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature #4 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -250,7 +271,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -263,12 +284,14 @@
         </picture>
       </article>
     </section>
+    <!-- End Section: Feature -->
+    <!-- Begin Section: Showcase -->
     <section class="block block--dark block--skewed-right block-showcase">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -279,7 +302,7 @@
           />
           <img src="images/ipad.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -328,8 +351,10 @@
         </ul>
       </div>
     </section>
+    <!-- End Section: Showcase -->
+    <!-- Begin Section: Testimonial -->
     <section class="block">
-      <header class="block__header">
+      <header class="block__header" data-aos="fade-up">
         <h2>What our Customers are Saying</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -339,7 +364,7 @@
       <div class="container">
         <div class="card testimonial">
           <div class="grid grid--1x2">
-            <div class="testimonial__image">
+            <div class="testimonial__image" data-aos="fade-right">
               <img
                 src="images/testimonial.jpg"
                 alt="A happy, smiling customer"
@@ -350,7 +375,7 @@
                 </svg>
               </span>
             </div>
-            <blockquote class="quote">
+            <blockquote class="quote" data-aos="fade-up">
               <p class="quote__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 ipsam adipisci possimus facilis? Et nostrum assumenda esse earum
@@ -373,6 +398,30 @@
         </div>
       </div>
     </section>
+    <!-- End Section: Testimonial -->
+    <!-- Begin Section: Callout -->
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              voluptate tempora qui distinctio consequatur aliquid pariatur
+              cupiditate quas cum fugit.
+            </p>
+          </div>
+          <a
+            target="_blank"
+            href="https://codewithmosh.com"
+            class="btn btn--secondary btn--stretched"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- End Section: Callout -->
+    <!-- Begin Section: Footer -->
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
@@ -441,6 +490,11 @@
         </section>
       </div>
     </footer>
+    <!-- End Section: Footer -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
